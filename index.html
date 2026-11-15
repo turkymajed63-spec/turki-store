@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turki Store</title>
+
+<style>
+body{
+font-family:Tahoma,sans-serif;
+margin:0;
+background:#f5f5f5;
+direction:rtl;
+text-align:center;
+}
+
+header{
+background:#111;
+color:white;
+padding:40px;
+}
+
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:white;
+width:280px;
+padding:20px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+button{
+background:#25D366;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#1da851;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Turki Store</h1>
+<p>متجر الألعاب والاشتراكات الرقمية</p>
+</header>
+
+<div class="products">
+
+<div class="card">
+<h2>ChatGPT Plus</h2>
+<p>اشتراك شهر كامل</p>
+<h3>40 ريال</h3>
+<button onclick="order('ChatGPT Plus')">
+اطلب عبر واتساب
+</button>
+</div>
+
+<div class="card">
+<h2>PlayStation Plus</h2>
+<p>بطاقات وشحن</p>
+<h3>35 ريال</h3>
+<button onclick="order('PlayStation Plus')">
+اطلب عبر واتساب
+</button>
+</div>
+
+<div class="card">
+<h2>Xbox Game Pass</h2>
+<p>اشتراكات Xbox</p>
+<h3>30 ريال</h3>
+<button onclick="order('Xbox Game Pass')">
+اطلب عبر واتساب
+</button>
+</div>
+
+</div>
+
+<script>
+function order(product){
+window.open(
+'https://wa.me/96654202098?text=السلام عليكم، أريد طلب '+product,
+'_blank'
+);
+}
+</script>
+
+</body>
+</html>
